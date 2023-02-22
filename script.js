@@ -1,3 +1,5 @@
+import { data, columns } from "./data.js";
+
 class Table {
   constructor(init) {
     this.init = init;
@@ -43,12 +45,8 @@ class Table {
 }
 
 const table = new Table({
-  columns: [["Name", "Email", "Alamat"]],
-  data: [
-    ["Muchlis", "muchlisar68@gmail.com", "Jln Cempaka Putih"],
-    ["Fendi", "fendiee8@gmail.com", "Jln Manggarai"],
-    ["Dimas", "masdimas2@gmail.com", "Jln kali sunter"],
-  ],
+  columns,
+  data,
 });
 
 const dataTable = document.getElementById("table");
